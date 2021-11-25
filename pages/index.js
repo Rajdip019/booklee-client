@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
     <h1>Booklee Initialized</h1>
+    <h3>Book description</h3>
     </>
   )
 }

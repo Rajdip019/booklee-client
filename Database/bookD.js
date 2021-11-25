@@ -1,5 +1,4 @@
 [
-
         {
             _id: 1,
             name: "HC Verma",
@@ -40,5 +39,6 @@
             condition: 4,
             seller_id: 2
         }
+
 
 ]

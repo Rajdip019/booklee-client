@@ -8,7 +8,9 @@
         Phone_no: 1234789056,
         Location: "Belgharia,Kolkata",
 
-        BookS_id:[1,2]            
+        BookS_id:[1,2], 
+        BookD_id:[1,2],
+        Favourites: [1,2]           
 
         
     },
@@ -21,7 +23,9 @@
         Phone_no: 1237894560,
         Location: "Sodepur",
 
-        BookS_id:[5,8]            
+        BookS_id:[5,8], 
+        BookD_id:[5,8],
+        Favourites: [4]               
 
         
     },
@@ -34,8 +38,9 @@
         Phone_no: 1789023456,
         Location: "Moscow,Russia",
 
-        BookS_id:[6,7]            
-
+        BookS_id:[6,7],         
+        BookD_id:[6,7],
+        Favourites: [3]   
         
     },
     {
@@ -47,7 +52,9 @@
         Phone_no: 1256734890,
         Location: "Kalimpong",
 
-        BookS_id:[3,4,9]            
+        BookS_id:[3,4,9],
+        BookD_id:[3,4],
+        Favourites: [9]              
 
         
     },
@@ -60,7 +67,9 @@
         Phone_no: 1236789045,
         Location: "Kalighat",
 
-        BookS_id:[10,12]            
+        BookS_id:[10,12],
+        BookD_id:[10,12],
+        Favourites: [7]               
 
         
     }

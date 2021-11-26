@@ -20,9 +20,6 @@ button{
   font-size: 1.1rem;
   font-weight: bold ;
 }
-p{
-  font-size: 1rem;
-}
 h1{
   font-size: 2.5rem;
   font-weight: 900;
@@ -39,6 +36,7 @@ h4{
   font-size: 1.2rem;
   font-weight: 500;
 }
+
 flex{
   display: flex;
 }
@@ -46,4 +44,3 @@ allignCenter{
   display: flex;
   justify-content: center;
   align-items: center;
-}

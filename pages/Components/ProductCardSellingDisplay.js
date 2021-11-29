@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCardSellingDisplay = (props) => {
     return (
-        <div>  
+        <div className="w-[266px]">  
             <div>
                <img className=" h-[300px] w-[266px] rounded-lg mb-3 " src={props.img} alt="" />
             </div>

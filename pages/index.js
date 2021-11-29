@@ -1,12 +1,12 @@
 import Document from "./document"
-import TopFreeEduBook from "./Components/TopFreeBooksHome"
+import Footer from "./Components/Footer"
 
 
 export default function Home() {
   return (
     <>  
     <Document />
-    <TopFreeEduBook />
+    <Footer />
     </>
   )
 }

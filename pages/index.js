@@ -1,8 +1,8 @@
-import Navbar from "./Components/Navbar"
+import Navbar from "./Component/Navbar"
 import Document from "./document"
-import UserProfileDonation from "./Components/UserProfileDonation"
+import UserProfileDonation from "./Component/UserProfileDonation"
 import User from "./UserDb"
-import UserProfileOthers from "./Components/UserProfileOthers"
+import UserProfileOthers from "./Component/UserProfileOthers"
 
 function UserdetailsEducational(user){
   return(

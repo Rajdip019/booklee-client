@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
+import { Avatar } from "@chakra-ui/react";
 const UserProfileOthers = (props) => {
   return (
     <>
@@ -15,14 +15,15 @@ const UserProfileOthers = (props) => {
             }}
           >
             <div className="w-full text-center items-center pt-14">
+
               <Avatar
                 name="Oshigaki Kisame"
-                className="rounded-full"
+                className="rounded-full w-28 h-28"
                 src={props.img}
-                style={{
-                  height: "135px",
-                  width: "135px",
-                }}
+                // style={{
+                //   height: "135px",
+                //   width: "135px",
+                // }}
               >
 
                 <svg
@@ -53,13 +54,13 @@ const UserProfileOthers = (props) => {
         >
           <div className="text-center">
             <Avatar
-              name="Oshigaki Kisame"
-              className="rounded-full"
+              name={props.name}
               src={props.img}
-              style={{
-                height: "135px",
-                width: "135px",
-              }}
+              className="w-28 h-28"
+              // style={{
+              //   height: "78px",
+              //   width: "78px",
+              // }}
             >
                                 <svg
                   xmlns="http://www.w3.org/2000/svg"

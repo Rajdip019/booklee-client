@@ -57,8 +57,8 @@ const UserProfileDonation = (props) => {
               className="rounded-full"
               src={props.img}
               style={{
-                height: "135px",
-                width: "135px",
+                height: "78px",
+                width: "78px",
               }}
             >
               <AvatarBadge boxSize="1.25em" src="_square.png" />

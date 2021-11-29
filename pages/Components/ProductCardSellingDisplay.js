@@ -4,7 +4,7 @@ const ProductCardSellingDisplay = (props) => {
     return (
         <div>  
             <div>
-               <img className=" h-[300px] w-[266px] rounded-lg mb-3" src={props.img} alt="" />
+               <img className=" h-[300px] w-[266px] rounded-lg mb-3 " src={props.img} alt="" />
             </div>
             <div className="flex ">
             <h1 className="w-[215px] font-semibold text-xl mb-2">{props.name}</h1>

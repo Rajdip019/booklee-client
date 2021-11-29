@@ -1,10 +1,10 @@
 import Document from "./document"
-import ProductCardDonationDisplay from "./Components/ProductCardDonationDisplay"
-import BookD from "../Database/bookD"
+import ProductDonatedCard from "./Components/ProductDonatedCard"
+import BookS from "../Database/bookS"
 
 function bookCards(Book){
   return(
-  <ProductCardDonationDisplay
+  <ProductDonatedCard
     name= {Book.name}
     img = {Book.photo}
     condition = {Book.condition}
@@ -12,13 +12,24 @@ function bookCards(Book){
   )
 }
 
+// function bookCards(Book){
+//   return(
+//   <ProductDonatedCard
+//     name= {Book.name}
+//     img = {Book.photo}
+//     price = {Book.Price}
+//     condition = {Book.condition}
+//     category = {Book.category}
+//      />
+//   )
+// }
+
 
 export default function Home() {
   return (
     <>  
     <Document />
-    {BookD.map(bookCards)}
-    
+    {BookS.map(bookCards)}  
     </>
   )
 }

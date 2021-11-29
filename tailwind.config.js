@@ -4,6 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        'sidebar-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')",
+       },
+
       textColor: {
         skin:{
           darkGreen: 'var(--dark-green)',

@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
+import { Avatar, AvatarBadge } from "@chakra-ui/react";
 const UserProfileDonation = (props) => {
   return (
     <>
@@ -7,7 +7,7 @@ const UserProfileDonation = (props) => {
       <div className="hidden lg:block">
         <div className="h-96 w-[calc(100%-300px)]">
           <div
-            className="  bg-Donation-bg"
+            className="bg-Donation-bg"
             style={{
               height: "350px",
               backgroundRepeat: "no-repeat",
@@ -16,7 +16,7 @@ const UserProfileDonation = (props) => {
           >
             <div className="w-full text-center items-center pt-14">
               <Avatar
-                name="Oshigaki Kisame"
+                name={props.name}
                 className="rounded-full"
                 src={props.img}
                 style={{
@@ -44,7 +44,7 @@ const UserProfileDonation = (props) => {
 
       <div className="block lg:hidden h-auto">
         <div
-          className="  bg-DonationM-bg"
+          className="bg-DonationM-bg"
           style={{
             height: "230px",
             backgroundRepeat: "no-repeat",
@@ -53,7 +53,7 @@ const UserProfileDonation = (props) => {
         >
           <div className="text-center">
             <Avatar
-              name="Oshigaki Kisame"
+              name={props.name}
               className="rounded-full"
               src={props.img}
               style={{

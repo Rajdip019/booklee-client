@@ -1,6 +1,4 @@
 import React from 'react'
-import { Fragment } from 'react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Input } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 

@@ -1,9 +1,6 @@
-import Navbar from "./Component/Navbar"
+import react from "react"
 import Document from "./document"
-
-import UserProfileDonation from "./Component/UserProfileDonation"
-import User from "./UserDb"
-import UserProfileOthers from "./Component/UserProfileOthers"
+import Modals from "./Components/modal"
 
 function UserdetailsEducational(user){
   return(
@@ -15,24 +12,11 @@ function UserdetailsEducational(user){
   )
 }
 
-
-  
-
-import Footer from "./Components/Footer"
-
-
-
 export default function Home() {
   return (
     <>  
     <Document />
-
-    <Navbar/>
-    {User.map(UserdetailsEducational)}
-    {/* {User.map(UserdetailsDonation)} */}
-
-    <Footer />
-
+    <Modals />
     </>
   
   )
@@ -44,5 +28,4 @@ export default function Home() {
 
 
 
-}
 

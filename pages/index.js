@@ -1,33 +1,29 @@
-import react from "react"
+import Navbar from "./Components/Navbar"
 import Document from "./document"
+
+import ToggleButton from "./Components/ToggleButton"
+
+
 import FilterM from "./Components/FilterM"
 
 
-// function bookDetails(book){
-//   return(
-//   <UserProfileOthers
-//   name={book.Name}
-//   img={book.Photo}
-//   location={book.Location}
-//   />
-//   )
-// }
+
 
 export default function Home() {
   return (
     <>  
     <Document />
+
+    <Navbar/>
+    <ToggleButton/>
+
+    {/* <ProgressChecker/> */}
+
+
     <FilterM />
     
+
     </>
   
   )
-
 }
-
-
-
-
-
-
-

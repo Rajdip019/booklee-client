@@ -3,7 +3,18 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+
     extend: {
+
+      backgroundImage: theme => ({
+        'Donation-bg': "url('/DonationProfile.png')",
+        'Educational-bg': "url('/EducationProfile.png')",
+        'DonationM-bg': "url('/M.png')",
+        'sidebar-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')"
+      }),
+
+
+
       textColor: {
         skin:{
           darkGreen: 'var(--dark-green)',

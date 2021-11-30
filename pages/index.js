@@ -1,24 +1,31 @@
+import react from "react"
 import Document from "./document"
-import ProductCardDonationDisplay from "./Components/ProductCardDonationDisplay"
-import BookD from "../Database/bookD"
+import Modals from "./Components/modal"
 
-function bookCards(Book){
+function UserdetailsEducational(user){
   return(
-  <ProductCardDonationDisplay
-    name= {Book.name}
-    img = {Book.photo}
-    condition = {Book.condition}
-     />
+  <UserProfileOthers
+  name={user.Name}
+  img={user.Photo}
+  location={user.Location}
+  />
   )
 }
-
 
 export default function Home() {
   return (
     <>  
     <Document />
-    {BookD.map(bookCards)}
-    
+    <Modals />
     </>
+  
   )
+
 }
+
+
+
+
+
+
+

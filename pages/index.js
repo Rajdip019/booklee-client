@@ -1,6 +1,6 @@
 import react from "react"
 import Document from "./document"
-import AuthOptions from "./Components/AuthOptions"
+import FilterM from "./Components/FilterM"
 
 
 // function bookDetails(book){
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>  
     <Document />
-    <AuthOptions />
+    <FilterM />
     
     </>
   

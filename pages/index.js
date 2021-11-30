@@ -1,31 +1,18 @@
-import react from "react"
+import Navbar from "./Components/Navbar"
 import Document from "./document"
-import Modals from "./Components/modal"
+import ToggleButton from "./Components/ToggleButton"
 
-function UserdetailsEducational(user){
-  return(
-  <UserProfileOthers
-  name={user.Name}
-  img={user.Photo}
-  location={user.Location}
-  />
-  )
-}
 
 export default function Home() {
   return (
     <>  
     <Document />
-    <Modals />
+    <Navbar/>
+    <ToggleButton/>
+
+    {/* <ProgressChecker/> */}
+
     </>
   
   )
-
 }
-
-
-
-
-
-
-

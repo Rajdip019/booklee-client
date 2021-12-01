@@ -1,8 +1,9 @@
-import Navbar from "./Components/Navbar"
 import Document from "./document"
 
-import ToggleButton from "./Components/ToggleButton"
-import NGOlist from "./Components/NGOlist"
+import Navbar from "./Components/Navbar"
+
+
+
 
 
 
@@ -11,9 +12,11 @@ export default function Home() {
   return (
     <>  
     <Document />
-    <NGOlist /> 
+
+    <Navbar/>
+
+
 
     </>
-  
   )
 }

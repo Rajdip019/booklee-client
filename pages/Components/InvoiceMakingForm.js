@@ -32,8 +32,8 @@ const InvoiceMakingForm = () => {
 
       <Button onClick={() => {onOpen(); handleExpansionClose(); }}>Open Modal</Button>
 
- 
-      <Modal isOpen={isOpen} onClose={onClose}  isCentered>
+      <div className="w-full">
+      <Modal isOpen={isOpen} onClose={onClose}  isCentered >
         <ModalOverlay bgColor="rgba(0, 0, 0, 0.2)"/>
         <div>
         <ModalContent className="bg-white rounded-lg shadow-lg p-8" maxW="400px" m="auto" minH="100px">
@@ -79,6 +79,7 @@ const InvoiceMakingForm = () => {
         </ModalContent>
       </div>
       </Modal>
+      </div>
 
     </>
 

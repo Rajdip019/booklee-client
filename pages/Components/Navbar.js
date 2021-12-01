@@ -1,8 +1,6 @@
-
 import React from "react";
 import { Input } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
-
 
 import {
   Menu,
@@ -16,7 +14,7 @@ import { Avatar } from "@chakra-ui/react";
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-8">
+      <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
         <div className="flex-shrink-0">
           <Avatar
             className="flex justify-start h-20 w-auto"
@@ -24,27 +22,40 @@ const Navbar = () => {
             alt="Workflow"
           />
         </div>
-        <div className="w-96 ">
+        <div className="w-72 flex">
           <Input
             type="text"
-            placeholder="&#128269;Search"
-            className="hidden lg:block bg-gray-200 h-10  my-5 ml-20 w-full"
+            placeholder="Search "
+            className="hidden xl:block bg-gray-200 h-10  my-5 w-full rounded-r-none"
           />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="50"
+              height="50"
+              viewBox="0 0 30 30"
+              className="bg-gray-300 h-10 mb-1.5 px-4 rounded-r-lg hidden xl:block"
+            >
+              <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+            </svg>
+          </button>
         </div>
         <div className="flex items-center">
-          <span className="hidden lg:block">
+          <span className="hidden xl:block">
             <Button className="bg-skin-lightBlue hover:bg-skin-hoverBlue text-skin-darkBlue p-2 px-3 rounded-lg mx-4">
               Sell
             </Button>
           </span>
-          <span className="hidden lg:block">
+          <span className="hidden xl:block">
             <Button className="bg-skin-lightGreen hover:bg-skin-hoverGreen text-skin-darkGreen p-2 rounded-lg mx-4">
               Donate
             </Button>
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="hidden lg:block h-5 w-5 text-skin-darkBlue mx-4 scale-150"
+            className="hidden xl:block h-5 w-5 text-skin-darkBlue mx-4 scale-150"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -61,8 +72,12 @@ const Navbar = () => {
               _focus={{ boxShadow: "outline" }}
               rightIcon={<ChevronDownIcon />}
             >
-              <div className="w-[35px] hidden lg:block ml-4 ">
-                <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" borderRadius="100%"/>
+              <div className="w-[35px] hidden xl:block ml-4 ">
+                <Avatar
+                  name="Dan Abrahmov"
+                  src="https://bit.ly/dan-abramov"
+                  borderRadius="100%"
+                />
               </div>
             </MenuButton>
             <MenuList className=" bg-white rounded-lg p-2 w-28 shadow-lg">
@@ -81,7 +96,7 @@ const Navbar = () => {
             </MenuList>
           </Menu>
           {/*Donate Button for mobile*/}
-          <div className="block lg:hidden">
+          <div className="block xl:hidden">
             <Menu>
               <MenuButton
                 py={2}
@@ -109,19 +124,25 @@ const Navbar = () => {
               </MenuButton>
               <MenuList className=" bg-white rounded-lg p-2 w-96 shadow-xl ">
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
-                  <span className="text-skin-darkGreen text-center mx-auto">Sell</span>
+                  <span className="text-skin-darkGreen text-center mx-auto">
+                    Sell
+                  </span>
                 </MenuItem>
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
-                  <span className="text-skin-darkGreen text-center mx-auto">Donate</span>
+                  <span className="text-skin-darkGreen text-center mx-auto">
+                    Donate
+                  </span>
                 </MenuItem>
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
-                  <span className="text-skin-darkGreen text-center mx-auto">Donate to NGO</span>
+                  <span className="text-skin-darkGreen text-center mx-auto">
+                    Donate to NGO
+                  </span>
                 </MenuItem>
               </MenuList>
             </Menu>
           </div>
           {/* {/--------------------------------------*Hamburger Menu*--------------------------------------------/} */}
-          <div className="block lg:hidden">
+          <div className="block xl:hidden">
             <Menu>
               <MenuButton
                 py={2}
@@ -163,12 +184,26 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="w-10/12 ml-auto mr-auto">
+      {/* //////////////////////////////Mobile Input/////////////////////////////////////////// */}
+      <div className="w-full">
+        <div className="mx-auto flex justify-center">
         <Input
           type="text"
           placeholder="Search"
-          className="block lg:hidden bg-gray-200 h-10 w-full"
+          className="block xl:hidden bg-gray-200 h-10 w-[315px] md:w-[450px] rounded-r-none"
         />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="50"
+          height="50"
+          viewBox="0 0 30 30"
+          className="bg-gray-300 h-10 mb-1.5 px-4 rounded-r-lg block xl:hidden  cursor-pointer"
+        >
+          <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+        </svg>
+      </div>
       </div>
     </div>
   );

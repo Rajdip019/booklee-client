@@ -13,7 +13,7 @@ const GetBooksHome = () => {
               Browse Now
             </button>
             </div>
-            <div className="">
+            <div >
                 <img src="/Edubg.png"></img>
             </div>
           </div>

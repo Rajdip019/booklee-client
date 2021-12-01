@@ -6,12 +6,13 @@ import DonateBottomHome from "./Components/DonateBottomHome"
 
 
 
+
 export default function Home() {
   return (
     <>  
     <Document />
     <Navbar/>
-    <DonateBottomHome/>
+
     </>
   )
 }

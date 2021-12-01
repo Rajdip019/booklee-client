@@ -1,6 +1,16 @@
 import React from "react";
-import { Input } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
+import { useDisclosure } from '@chakra-ui/hooks'
+import {
+    Drawer,
+    DrawerBody,
+    DrawerOverlay,
+    DrawerContent,
+    DrawerCloseButton,
+    Button,
+    Input,  
+    ChakraProvider,
+    Checkbox
+  } from '@chakra-ui/react'
 
 import {
   Menu,
@@ -9,11 +19,16 @@ import {
   MenuItem,
   ChevronDownIcon,
 } from "@chakra-ui/react";
+
 import { Avatar } from "@chakra-ui/react";
 
 const Navbar = () => {
+
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
+
   return (
-    <div>
+    <div className="shadow-lg relative z-40">
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
         <div className="flex-shrink-0">
           <Avatar
@@ -122,7 +137,7 @@ const Navbar = () => {
                   </svg>
                 </div>
               </MenuButton>
-              <MenuList className=" bg-white rounded-lg p-2 w-96 shadow-xl ">
+              <MenuList className=" bg-white rounded-lg p-2 w-24 shadow-xl ">
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
                   <span className="text-skin-darkGreen text-center mx-auto">
                     Sell
@@ -143,49 +158,44 @@ const Navbar = () => {
           </div>
           {/* {/--------------------------------------*Hamburger Menu*--------------------------------------------/} */}
           <div className="block xl:hidden">
-            <Menu>
-              <MenuButton
-                py={2}
-                transition="all 0.2s"
-                _expanded={{ bg: "blue.400" }}
-                _focus={{ boxShadow: "outline" }}
-                rightIcon={<ChevronDownIcon />}
-              >
-                <div className="w-[35px] ml-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-              </MenuButton>
-              <MenuList className=" bg-white rounded-lg p-2 w-96 shadow-xl">
-                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
-                  <span className="text-skin-darkBlue mx-auto">Profile</span>
-                </MenuItem>
-                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
-                  <span className="text-skin-darkBlue mx-auto">Favourite</span>
-                </MenuItem>
-                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
-                  <span className="text-skin-darkBlue mx-auto">Message</span>
-                </MenuItem>
-                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
-                  <span className="text-skin-darkBlue mx-auto">Log-out</span>
-                </MenuItem>
-              </MenuList>
-            </Menu>
+          <>
+        <ChakraProvider>
+        <Button ref={btnRef} onClick={onOpen} bgColor="white">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+        </svg>
+        </Button>
+        <Drawer
+          isOpen={isOpen}
+          placement='right'
+          onClose={onClose}
+          finalFocusRef={btnRef}
+        >
+          <DrawerOverlay />
+          <DrawerContent >
+            <DrawerCloseButton />
+  
+            <DrawerBody >
+            <>
+            <div className="text-center">
+                <h1 className="text-3xl font-semibold py-10">Booklee</h1>
+                <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Profile</button>
+                <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Favourite</button>
+                <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Messege</button>
+                <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Logout</button>
+            </div>
+        </>
+            </DrawerBody>
+  
+          </DrawerContent>
+        </Drawer>
+        </ChakraProvider>
+      </>
           </div>
         </div>
       </nav>
-      {/* //////////////////////////////Mobile Input/////////////////////////////////////////// */}
-      <div className="w-full">
+      {/* //////////////////////////////Mobile Serch Input/////////////////////////////////////////// */}
+      <div className="w-full pb-5">
         <div className="mx-auto flex justify-center">
         <Input
           type="text"
@@ -199,7 +209,7 @@ const Navbar = () => {
           width="50"
           height="50"
           viewBox="0 0 30 30"
-          className="bg-gray-300 h-10 mb-1.5 px-4 rounded-r-lg block xl:hidden  cursor-pointer"
+          className="bg-gray-300 h-10 mb-1.5 px-4 rounded-r-lg block xl:hidden  cursor-pointer "
         >
           <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
         </svg>
@@ -207,6 +217,8 @@ const Navbar = () => {
       </div>
     </div>
   );
+
 };
+
 
 export default Navbar;

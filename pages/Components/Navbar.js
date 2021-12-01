@@ -13,7 +13,7 @@ import { Avatar } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="shadow-lg">
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
         <div className="flex-shrink-0">
           <Avatar

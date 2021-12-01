@@ -17,12 +17,11 @@ const UserProfileDonation = (props) => {
             <div className="w-full text-center items-center pt-14">
               <Avatar
 
-              className="w-28 h-20"
+              className="w-36 h-28"
                 name={props.name}
                 borderRadius="100%"
 
                 name={props.name}
-                className="rounded-full"
 
                 src={props.img}
 
@@ -36,7 +35,7 @@ const UserProfileDonation = (props) => {
                 </svg>
                 <AvatarBadge boxSize="1.25em" src="_square.png" />
               </Avatar>
-              <h3 className="text-white">{props.name}</h3>
+              <h3 className="text-white text-xl font-semibold">{props.name}</h3>
               <h4 className="text-white">{props.location}</h4>
             </div>
           </div>
@@ -58,10 +57,9 @@ const UserProfileDonation = (props) => {
             <Avatar
               name={props.name}
 
-              className="w-28 h-20"
+              className="w-28 h-20 mt-7"
               borderRadius="100%"
 
-              className="rounded-full"
 
               src={props.img}
             >
@@ -73,8 +71,8 @@ const UserProfileDonation = (props) => {
                 <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
               </svg>
             </Avatar>
-            <h3 className="text-white">Jon Hatson</h3>
-            <h4 className="text-white">Gurgaon,New Delhi, India</h4>
+            <h3 className="text-white text-xl font-semibold">{props.name}</h3>
+            <h4 className="text-white">{props.location}</h4>
           </div>
         </div>
       </div>

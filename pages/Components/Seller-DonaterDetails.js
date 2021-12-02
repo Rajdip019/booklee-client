@@ -9,7 +9,7 @@ const SellerDonaterDetails = (props) => {
 
             <div className="hidden lg:block">
 
-                <div className=" bg-gray-100 grid grid-cols-5 p-4 w-[calc(100%-300px)] h-[245px] rounded-2xl ">
+                <div className=" bg-gray-100 grid grid-cols-5 p-4 h-[245px] rounded-2xl ">
                     <h1 className="col-span-5 text-center font-bold text-3xl mb-5">Seller Profile</h1>
                     <div className="mt-auto mb-auto text-center ">
                         <Avatar name={props.name} src={props.img} size='lg' className="w-28 h-28 mb-5" borderRadius="100%"/>

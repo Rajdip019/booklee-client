@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className="grid md:grid-cols-5 bg-skin-lightBlue p-10 grid-cols-1">
+            <div className="grid md:grid-cols-5 bg-skin-lightBlue p-10 grid-cols-1 mt-10">
                 <div className=" text-center m-auto">
                     <img className="w-56 m-auto" src="/Logo.png" alt="logo" />
                     <p className="hidden lg:block">“If you want your checkbook to follow your heart,

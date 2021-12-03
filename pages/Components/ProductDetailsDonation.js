@@ -3,7 +3,7 @@ import React from 'react'
 const ProductDetailsDonation = (props) => {
     return (
         <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:w-[calc(100%-300px)]  w-10/12 md:w-full mx-auto md:mx-0 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-10/12 md:w-full mx-auto md:mx-0 ">
 
 <div className="bg-gray-200 md:mx-4 md:my-4 lg:mx-12 lg:my-12 xl:mx-20 xl:my-20 2xl:mx-32 2xl:my-32">
     <img src={props.img} alt="book-preview" className=" rounded-xl min-h-full min-w-full " />

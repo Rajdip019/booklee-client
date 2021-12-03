@@ -29,7 +29,9 @@ const Navbar = () => {
 
   return (
 
-    <div className="shadow-lg z-40">
+
+    <div className="shadow-lg sticky top-0 z-30">
+
 
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
         <div className="flex-shrink-0">
@@ -61,12 +63,12 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <span className="hidden xl:block">
-            <Button className="bg-skin-lightBlue hover:bg-skin-hoverBlue text-skin-darkBlue p-2 px-3 rounded-lg mx-4">
+            <Button className="bg-skin-lightBlue hover:bg-skin-hoverBlue text-skin-darkBlue p-2 px-3 rounded-lg mx-4 font-bold">
               Sell
             </Button>
           </span>
           <span className="hidden xl:block">
-            <Button className="bg-skin-lightGreen hover:bg-skin-hoverGreen text-skin-darkGreen p-2 rounded-lg mx-4">
+            <Button className="bg-skin-lightGreen hover:bg-skin-hoverGreen text-skin-darkGreen p-2 rounded-lg mx-4 font-bold">
               Donate
             </Button>
           </span>

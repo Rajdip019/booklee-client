@@ -10,11 +10,11 @@ const HomePageMain = () => {
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
           <div className="sm:max-w-lg">
-            <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl relative z-20">
+            <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl relative z-20 leading-[50px]">
             Donate and sell
             your Old books
             </h1>
-            <p className="mt-4 text-xl text-gray-500 relative z-20">
+            <p className="mt-4 text-xl text-gray-500 relative z-20 ">
               Donate and sell your Old bookLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the best. 
             </p>
           </div>

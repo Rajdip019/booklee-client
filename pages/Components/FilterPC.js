@@ -3,7 +3,7 @@ import React from 'react'
 const FilterPC = () => {
     return (
         <>
-            <div className="w-[300px] text-center shadow-2xl h-[100vh]">
+            <div className="w-[300px] text-center shadow-2xl h-[100vh] fixed">
                 <h1 className="text-3xl font-semibold py-10">Filter</h1>
                 <div>
                     <h2 className="text-left pl-10 text-xl font-semibold py-3">Price</h2>

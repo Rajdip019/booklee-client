@@ -24,7 +24,7 @@ function bookCards(Book){
   }
 
 
-  function bookCardsold(Book){
+function bookCardsold(Book){
     return(
     <div className="my-8 md:scale-75 md:my-0 lg:my-8 lg:scale-100 mx-auto">
     <ProductDonatedCard
@@ -36,7 +36,7 @@ function bookCards(Book){
        />
     </div>
     )
-  }  
+}  
 
 
 

@@ -5,7 +5,7 @@ const UserProfileDonation = (props) => {
     <>
       {/* //------------------------For Laptop Size-------------------------------------- */}
       <div className="hidden lg:block">
-        <div className="h-96 w-[calc(100%-300px)]">
+        <div className="h-96 w-[calc(100%-300px)] ml-[300px]">
           <div
             className="bg-Donation-bg"
             style={{

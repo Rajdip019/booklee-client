@@ -7,47 +7,59 @@ import {
   Button,
   ChakraProvider,
 } from "@chakra-ui/react";
-import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 const login = () => {
   return (
-    <div>
-      <div className="mx-auto">
-        <img src="/Logo.png" className="mx-auto w-[250px]"></img>
-      </div>
-      <div className="w-11/12 xl:max-w-[60vw] mx-auto">
+    <div className="h-screen">
+      <div className="my-auto">
         <div>
-          <h1 className="font-medium text-lg">Login:</h1>
-          <h3>Enter your details below</h3>
+        <div className="mx-auto">
+          <img src="/Logo.png" className="mx-auto w-[250px]"></img>
+        </div>
+        <div className="w-10/12 md:w-9/12 lg:max-w-[39vw] mx-auto">
+          <div>
+            <h1 className="font-medium text-lg">Login:</h1>
+            <h3>Enter your details below</h3>
+          </div>
+        </div>
         </div>
         <div className="my-5">
-          <AuthOptions/>
+          <AuthOptions />
         </div>
-        {/* <div>
-            <span>----------------------------------------------------------OR----------------------------------------------------------</span>
-        </div> */}
-        <div className="my-5">
-          <h3>Username or E-mail</h3>
-          <ChakraProvider>
-            <Input placeholder="john@gmail.com" />
-          </ChakraProvider>
-        </div>
-        <div className="my-5">
-          <ChakraProvider>
-          <h3>Password</h3>
-            <PasswordInput placeholder='At least 8 symbols...'/>
-          </ChakraProvider>
-        </div>
-        <div className="my-10">
-            <div className="flex justify-between">
-        <ChakraProvider >
-        <Checkbox defaultIsChecked >Remember me</Checkbox>
-        </ChakraProvider>
-        <h3 className="text-skin-darkBlue">Forgot password?</h3>
-        </div>
-        </div>
-        <div >
-            <button className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">Login</button>
+
+        <div className="w-10/12 md:w-9/12 lg:max-w-[39vw] mx-auto">
+          <hr className="w-full my-10"></hr>
+
+          <div>
+            <div className="my-5">
+              <h3>Email</h3>
+              <ChakraProvider>
+                <Input placeholder="john@gmail.com" />
+              </ChakraProvider>
+            </div>
+            <div className="my-5">
+              <ChakraProvider>
+                <h3>Password</h3>
+                <PasswordInput placeholder="At least 8 symbols..." />
+              </ChakraProvider>
+            </div>
+            <div className="my-10">
+              <div className="flex justify-between">
+                <ChakraProvider>
+                  <Checkbox color="green" colorScheme="green" > 
+                    Remember me
+                  </Checkbox>
+                </ChakraProvider>
+                <h3 className="text-skin-darkGreen underline">Forgot password?</h3>
+              </div>
+            </div>
+            <div>
+              <button className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">
+                Login
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

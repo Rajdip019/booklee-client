@@ -14,7 +14,7 @@ export default function ProgressChecker() {
             <div className="w-full text-center">
           <button
             onClick={nextPage}
-            className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 rounded-xl mb-5"
+            className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5"
           >
             Next
           </button>
@@ -25,7 +25,7 @@ export default function ProgressChecker() {
           <div className="w-full text-center">
         <button
           onClick={nextPage}
-          className="inline-block font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 rounded-xl mb-5"
+          className="inline-block font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5"
           >
           Submit
         </button>
@@ -35,7 +35,7 @@ export default function ProgressChecker() {
           <div className="w-full text-center">
         <button
           onClick={nextPage}
-          className="inline-block font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 rounded-xl mb-5"
+          className="inline-block font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5"
           >
           Submit
         </button>

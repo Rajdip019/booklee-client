@@ -29,7 +29,9 @@ const Navbar = () => {
 
   return (
 
+
     <div className="shadow-lg sticky top-0 z-30">
+
 
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
         <div className="flex-shrink-0">

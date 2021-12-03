@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useState } from "react";
 
@@ -15,6 +16,7 @@ const ProductCardSellingDisplay = (props) => {
           alt=""
         />
         {state ==
+
           true &&(
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +50,7 @@ const ProductCardSellingDisplay = (props) => {
               />
             </svg>
           )}
+
       </div>
       <div className="flex ">
         <h1 className="w-[215px] font-semibold text-xl mb-2">{props.name}</h1>
@@ -74,3 +77,4 @@ const ProductCardSellingDisplay = (props) => {
 };
 
 export default ProductCardSellingDisplay;
+

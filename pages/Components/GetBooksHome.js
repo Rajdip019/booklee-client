@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 const GetBooksHome = () => {
   return (
@@ -9,9 +10,11 @@ const GetBooksHome = () => {
             <div className="m-auto">
             <h1 className="text-lg sm:text-5xl font-bold">Get</h1>
             <h1 className="text-md sm:text-2xl font-bold">Free Educational Books</h1>
+            <Link href="/browsefreebooks" >
             <button className="font-bold bg-skin-darkGreen text-skin-lightGreen rounded-xl p-2 my-3 text-xl">
               Browse Now
             </button>
+            </Link>
             </div>
             <div >
                 <img src="/Edubg.png"></img>
@@ -24,9 +27,11 @@ const GetBooksHome = () => {
             <div className="m-auto">
             <h1 className="text-lg sm:text-5xl font-bold">Get</h1>
             <h1 className="text-md sm:text-2xl font-bold">Old Books at lesser price</h1>
+            <Link href="/browsebooks" >
             <button className="font-bold bg-skin-darkBlue text-skin-lightBlue rounded-xl p-2 my-3 text-xl">
               Browse Now
             </button>
+            </Link>
             </div>
             <div className="">
                 <img src="/Sellbg.png"></img>

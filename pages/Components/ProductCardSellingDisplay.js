@@ -8,7 +8,7 @@ const ProductCardSellingDisplay = (props) => {
     setstate((state = !state));
   }
   return (
-    <div className="w-[266px]">
+    <div className="w-[266px] cursor-pointer">
       <div>
         <img
           className=" h-[300px] w-[266px] rounded-lg mb-3"

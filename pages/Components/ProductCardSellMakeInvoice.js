@@ -31,7 +31,7 @@ const ProductCardSellMakeInvoice = (props) => {
 
 
     return (
-        <div>
+        <div className="cursor-pointer">
           <div>
             <img className=" h-[300px] w-[266px] rounded-t-lg " src={props.img} alt="" />
             </div>

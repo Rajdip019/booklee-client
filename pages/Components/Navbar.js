@@ -221,12 +221,12 @@ const Navbar = () => {
         </div>
       </nav>
       {/* //////////////////////////////Mobile Serch Input/////////////////////////////////////////// */}
-      <div className="w-full pb-5">
+      <div className="w-full pb-5 block xl:hidden bg-white">
         <div className="mx-auto flex justify-center">
           <Input
             type="text"
             placeholder="Search"
-            className="block xl:hidden bg-gray-200 h-10 w-[315px] md:w-[450px] rounded-r-none"
+            className=" bg-gray-200 h-10 w-[315px] md:w-[450px] rounded-r-none"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -3,10 +3,12 @@ import GeneralSidebar from "../Components/GeneralSidebar";
 import Navbar from "../Components/Navbar";
 import NGOlist from "../Components/NGOlist";
 import Link from "next/link";
+import Document from "../document";
 
 const DonationNGOlist = () => {
   return (
     <div>
+    <Document />
       <Navbar />
       <form>
       <GeneralSidebar title="Donate to a NGO" />

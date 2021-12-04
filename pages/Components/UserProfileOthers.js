@@ -1,6 +1,8 @@
 import React from "react";
 import { Avatar } from "@chakra-ui/react";
 import Link from "next/link";
+
+
 const UserProfileOthers = (props) => {
   return (
     <>

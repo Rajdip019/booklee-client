@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
-import { Avatar, AvatarBadge } from "@chakra-ui/react";
+import Document from "../document";
 import {
   Input,
   InputRightElement,
@@ -14,6 +14,7 @@ const ListBookForDonating = () => {
   return (
     <form>
     <div>
+    <Document />
       <Navbar />
       <GeneralSidebar title="List Your Book" />
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
+import Document from "../document";
 import {
   Input,
   ChakraProvider,
@@ -10,6 +11,7 @@ const ListBookForSelling = () => {
   return (
     <form>
     <div>
+    <Document />
       <Navbar />
       <GeneralSidebar title="List Your Book" />
 

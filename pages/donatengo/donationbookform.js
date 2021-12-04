@@ -3,10 +3,12 @@ import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import { Input, ChakraProvider } from "@chakra-ui/react";
 import Link from "next/link";
+import Document from "../document";
 
 const DonationBookForm = () => {
   return (
     <div>
+      <Document />
       <Navbar />
       <GeneralSidebar title="Donate to a NGO" />
       <form>

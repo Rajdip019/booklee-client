@@ -2,11 +2,15 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import { Input, ChakraProvider } from "@chakra-ui/react";
+
+import Document from "../document";
+
 import Link from "next/link";
 
 const DonationAddressForm = () => {
   return (
     <div className="">
+      <Document />
       <Navbar />
       <GeneralSidebar title="Donate to a NGO" />
 

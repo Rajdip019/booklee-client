@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const DonationMainCounter = () => {
     return (
@@ -11,7 +12,9 @@ const DonationMainCounter = () => {
                 <h1 className="text-4xl font-bold text-center">0/100</h1>
             </div>
             <div className="text-center">
+            <Link href="/donatengo/donationadressform">
             <button className="mt-5 text-skin-darkGreen bg-skin-lightGreen hover:bg-skin-hoverGreen p-[16px] rounded-xl text-center font-bold">Donate</button>
+            </Link>
             </div>
             
         </div>

@@ -11,6 +11,8 @@ import {
     ChakraProvider,
     Checkbox
   } from '@chakra-ui/react'
+  import Link from "next/link";
+
 
 import {
   Menu,
@@ -35,11 +37,13 @@ const Navbar = () => {
 
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
         <div className="flex-shrink-0">
+        <Link href="/">
           <Avatar
             className="flex justify-start h-20 w-auto"
             src="/Logo.png"
             alt="Workflow"
           />
+          </Link>
         </div>
         <div className="w-72 flex">
           <Input
@@ -63,9 +67,11 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <span className="hidden xl:block">
+          <Link href="/ListBookForSelling">
             <Button className="bg-skin-lightBlue hover:bg-skin-hoverBlue text-skin-darkBlue p-2 px-3 rounded-lg mx-4 font-bold">
               Sell
             </Button>
+            </Link>
           </span>
           <span className="hidden xl:block">
             <Button className="bg-skin-lightGreen hover:bg-skin-hoverGreen text-skin-darkGreen p-2 rounded-lg mx-4 font-bold">
@@ -100,12 +106,16 @@ const Navbar = () => {
               </div>
             </MenuButton>
             <MenuList className=" bg-white rounded-lg p-2 w-28 shadow-lg">
+            <Link href="/userprofilesell">
               <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
-                <span className="text-skin-darkBlue">Edit</span>
+                <span className="text-skin-darkBlue">User Profile</span>
               </MenuItem>
+              </Link>
+              <Link href="/userprofilesell/favourite">
               <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
                 <span className="text-skin-darkBlue">Favourite</span>
               </MenuItem>
+              </Link>
               <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
                 <span className="text-skin-darkBlue">Message</span>
               </MenuItem>
@@ -142,21 +152,27 @@ const Navbar = () => {
                 </div>
               </MenuButton>
               <MenuList className=" bg-white rounded-lg p-2 w-24 shadow-xl ">
+              <Link href="/ListBookForSelling">
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
                   <span className="text-skin-darkGreen text-center mx-auto">
                     Sell
                   </span>
                 </MenuItem>
+                </Link>
+                <Link href="/ListBookForDonating">
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
                   <span className="text-skin-darkGreen text-center mx-auto">
-                    Donate
+                    Donate Directly
                   </span>
                 </MenuItem>
+                </Link>
+                <Link href="/donatengo">
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
                   <span className="text-skin-darkGreen text-center mx-auto">
                     Donate to NGO
                   </span>
                 </MenuItem>
+                </Link>
               </MenuList>
             </Menu>
           </div>
@@ -183,8 +199,12 @@ const Navbar = () => {
             <>
             <div className="text-center">
                 <h1 className="text-3xl font-semibold py-10">Booklee</h1>
+                <Link href="/userprofilesell">
                 <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Profile</button>
+                </Link>
+                <Link href="/userprofilesell/favourite">
                 <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Favourite</button>
+                </Link>
                 <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Messege</button>
                 <button className="w-full bg-skin-lightBlue text-xl rounded-lg font-semibold text-skin-darkBlue mb-2">Logout</button>
             </div>

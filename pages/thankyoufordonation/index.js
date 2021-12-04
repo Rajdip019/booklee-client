@@ -1,7 +1,7 @@
 import Document from "../document";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
-
+import Link from "next/link";
 
 export default function ThankYou() {
     return (
@@ -15,7 +15,9 @@ export default function ThankYou() {
             <p className="text-center text-gray-500 my-10">"The value of life is not in its duration, but in its donation. You are not important because of how long you live,<br />  you are important because of how effective you live."</p>
             <img src="/thankyou.png" alt="" className="m-auto"/>
             <p className="text-center text-gray-500 my-10">We will reach you soon with a scheduling mail within 7 days</p>
+            <Link href="/">
             <button className="block lg:hidden bg-skin-lightBlue text-skin-darkBlue p-2 px-6 text-xl font-bold rounded-lg mt-10 hover:bg-skin-hoverBlue mx-auto">Go to Home Page</button>
+            </Link>
             </div>
             </div>
         </>

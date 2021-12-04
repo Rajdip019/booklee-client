@@ -12,9 +12,14 @@ import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 const login = () => {
   return (
+
+    <form>
+      <div className="h-screen">
+
     <>
     <Document />
     <div className="h-screen">
+
       <div className="my-auto">
         <div>
         <div className="mx-auto">
@@ -58,7 +63,7 @@ const login = () => {
               </div>
             </div>
             <div>
-              <button className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">
+              <button type="submit" className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">
                 Login
               </button>
             </div>
@@ -66,7 +71,12 @@ const login = () => {
         </div>
       </div>
     </div>
+
+    </form>
+
+
     </>
+
   );
 };
 

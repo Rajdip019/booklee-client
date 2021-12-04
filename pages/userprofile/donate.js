@@ -5,7 +5,7 @@ import UserProfileDonation from "../Components/UserProfileDonation";
 import ToggleButtonDonate from "../Components/ToggleButtonDonate";
 import ProductCardDonationMakeProof from "../Components/ProductCardDonationMakeProof";
 import ProductDonatedCard from "../Components/ProductDonatedCard";
-import Footer from "../Components/Footer";
+import Link from "next/link";
 
 import BookD from "../../Database/bookD";
 
@@ -66,6 +66,11 @@ export default function UserProfileDonate() {
       <div className="lg:ml-[300px] my-10 grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:w-[calc(100%-350px)] align-middle">
       {BookD.map(bookCardsold)}
       </div>
+      <Link href="/ListBookForDonating">
+      <button className="fixed right-10 bottom-10 bg-skin-darkGreen rounded-full text-skin-lightGreen p-4 shadow-xl"><svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+      </svg></button>
+      </Link>
       </>
     )
   }

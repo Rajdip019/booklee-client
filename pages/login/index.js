@@ -1,5 +1,6 @@
 import React from "react";
 import AuthOptions from "../Components/AuthOptions";
+import Document from "../document";
 import {
   Input,
   InputRightElement,
@@ -11,6 +12,8 @@ import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 const login = () => {
   return (
+    <>
+    <Document />
     <div className="h-screen">
       <div className="my-auto">
         <div>
@@ -63,6 +66,7 @@ const login = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

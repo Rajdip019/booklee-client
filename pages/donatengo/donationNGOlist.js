@@ -2,12 +2,13 @@ import React from "react";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import Navbar from "../Components/Navbar";
 import NGOlist from "../Components/NGOlist";
-import ProgressChecker from "../Components/ProgressChecker";
 import Link from "next/link";
+import Document from "../document";
 
 const DonationNGOlist = () => {
   return (
     <div>
+    <Document />
       <Navbar />
       <GeneralSidebar title="Donate to a NGO" />
       <div className="lg:w-[calc(100%-300px)] mt-10">

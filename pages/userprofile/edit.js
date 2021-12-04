@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import { Avatar, AvatarBadge } from "@chakra-ui/react";
+import Document from "../document";
 import {
   Input,
   InputRightElement,
@@ -13,6 +14,7 @@ import {
 const EditProfile = () => {
   return (
     <div>
+    <Document />
       <Navbar />
       <GeneralSidebar title="Edit Profile" />
         {/* ///////////////////////////////////Avatar Section//////////////////////////////// */}

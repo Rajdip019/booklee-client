@@ -1,6 +1,5 @@
 import React from "react";
 import AuthOptions from "../Components/AuthOptions";
-import Document from "../document"
 import {
   Input,
   InputRightElement,
@@ -12,17 +11,12 @@ import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 const Register = () => {
   return (
-
-    <form>
-
-    <>
-    <Document />
-
     <div className="h-screen">
       <div className="my-auto">
         <div className="mx-auto">
           <img src="/Logo.png" className="mx-auto w-[250px]"></img>
         </div>
+        <form>
         <div className="w-10/12 md:w-9/12 lg:max-w-[39vw] mx-auto">
           <div>
             <h1 className="font-medium text-lg">Register:</h1>
@@ -65,19 +59,17 @@ const Register = () => {
               </div>
             </div>
             <div>
-              <button type="submit" className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">
+              <button className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">
                 Register
               </button>
             </div>
+            
           </div>
+          
         </div>
+        </form>
       </div>
     </div>
-
-    </form>
-
-    </>
-
   );
 };
 

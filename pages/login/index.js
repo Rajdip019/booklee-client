@@ -16,7 +16,7 @@ const login = () => {
     <form>
       <div className="h-screen">
 
-    <>
+
     <Document />
     <div className="h-screen">
 
@@ -27,6 +27,7 @@ const login = () => {
         </div>
         <div className="w-10/12 md:w-9/12 lg:max-w-[39vw] mx-auto">
           <div>
+
             <h1 className="font-medium text-lg">Login:</h1>
             <h3>Enter your details below</h3>
           </div>
@@ -38,7 +39,7 @@ const login = () => {
 
         <div className="w-10/12 md:w-9/12 lg:max-w-[39vw] mx-auto">
           <hr className="w-full my-10"></hr>
-
+          <form>
           <div>
             <div className="my-5">
               <h3>Email</h3>
@@ -68,14 +69,16 @@ const login = () => {
               </button>
             </div>
           </div>
+    </form>
         </div>
       </div>
+    </div>
     </div>
 
     </form>
 
 
-    </>
+
 
   );
 };

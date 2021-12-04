@@ -1,5 +1,6 @@
 import React from "react";
 import { Avatar } from "@chakra-ui/react";
+import Link from "next/link";
 const UserProfileOthers = (props) => {
   return (
     <>
@@ -22,6 +23,8 @@ const UserProfileOthers = (props) => {
                 borderRadius="100%"
 
               >
+              <Link href="/userprofile/edit">
+              <div className="cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-8 bg-skin-lightBlue text-skin-darkBlue mt-16 rounded-2xl"
@@ -29,6 +32,8 @@ const UserProfileOthers = (props) => {
                 >
                   <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
                 </svg>
+                </div>
+              </Link>
               </Avatar>
               <h3 className="text-white text-xl font-semibold">{props.name}</h3>
               <h4 className="text-white">{props.location}</h4>

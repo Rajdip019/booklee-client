@@ -2,13 +2,13 @@ import React from "react";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import Navbar from "../Components/Navbar";
 import NGOlist from "../Components/NGOlist";
-import ProgressChecker from "../Components/ProgressChecker";
 import Link from "next/link";
 
 const DonationNGOlist = () => {
   return (
     <div>
       <Navbar />
+      <form>
       <GeneralSidebar title="Donate to a NGO" />
       <div className="lg:w-[calc(100%-300px)] mt-10">
         <div className="lg:ml-[calc(300px+4vw)]  w-11/12 mx-auto ">
@@ -26,7 +26,7 @@ const DonationNGOlist = () => {
           <div className="mt-5">
             <div className="w-full text-center">
               <Link href="/donatengo/donationbookform">
-                <button className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5">
+                <button type="submit" className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5">
                   Continue
                 </button>
               </Link>
@@ -62,6 +62,7 @@ const DonationNGOlist = () => {
           </div>
         </div>
       </div>
+      </form>
     </div>
   );
 };

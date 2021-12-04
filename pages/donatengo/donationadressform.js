@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import { Input, ChakraProvider } from "@chakra-ui/react";
-import ProgressChecker from "../Components/ProgressChecker";
 import Link from "next/link";
 
 const DonationAddressForm = () => {
@@ -11,6 +10,7 @@ const DonationAddressForm = () => {
       <Navbar />
       <GeneralSidebar title="Donate to a NGO" />
 
+      <form>
       {/* ///////////////////////////////////DonationAdressForm(first part)//////////////////////////////// */}
       <div className="mt-12 w-10/12 mx-auto">
         <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)] grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10">
@@ -72,7 +72,7 @@ const DonationAddressForm = () => {
           <div className="w-full text-center">
             <Link href="/donatengo/donationNGOlist">
           <button
-            className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-10"
+           type="submit" className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-10"
           >
             Find a Nearby NGO
           </button>
@@ -102,6 +102,7 @@ const DonationAddressForm = () => {
           </div>
         </div>
       </div>
+      </form>
     </div>
   );
 };

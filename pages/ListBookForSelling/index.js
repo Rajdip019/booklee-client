@@ -8,6 +8,7 @@ import {
 
 const ListBookForSelling = () => {
   return (
+    <form>
     <div>
       <Navbar />
       <GeneralSidebar title="List Your Book" />
@@ -123,10 +124,11 @@ const ListBookForSelling = () => {
             <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
           </div>
         </div>
-      <button className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
+      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
       </div>
       </div>
     </div>
+    </form>
   );
 };
 

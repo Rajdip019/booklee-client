@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/dist/client/link";
 
 const DonateBottomHome = () => {
   return (
@@ -15,9 +16,11 @@ const DonateBottomHome = () => {
               </h1>
             </div>
             <div className="my-auto text-center">
+            <Link href="/donatengo">
             <button className="font-bold bg-skin-darkGreen text-skin-lightGreen rounded-xl mr-0 sm:mr-7 p-2 my-3">
               Donate Now
             </button>
+            </Link>
             </div>
           </div>
       </div>

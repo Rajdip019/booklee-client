@@ -1,7 +1,6 @@
 import Document from "./document"
-// import HomePageMain from "./Components/HomePageMain"
+import HomePageMain from "./Components/HomePageMain"
 import Navbar from "./Components/Navbar"
-
 import NewlyAddedHome from "./Components/NewlyAddedHome"
 import GetBooksHome from "./Components/GetBooksHome"
 import TopFreeBooksHome from "./Components/TopFreeBooksHome"
@@ -18,7 +17,6 @@ export default function Home() {
     <>  
     <Document />
     <Navbar/>
-
     <HomePageMain />
     <NewlyAddedHome />
     <GetBooksHome />

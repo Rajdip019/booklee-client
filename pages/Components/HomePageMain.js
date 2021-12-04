@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const HomePageMain = () => {
     return (
@@ -86,24 +87,29 @@ const HomePageMain = () => {
                 </div>
               </div>
 
+              <Link href="/ListBookForDonating">
               <a
-                href="#"
                 className="inline-block text-center font-bold text-xl bg-skin-lightGreen border border-transparent rounded-md py-3 px-10 text-skin-darkGreen hover:bg-skin-hoverGreen"
               >
                 Donate Now
               </a>
+              </Link>
+              <Link href="/ListBookForSelling">
               <a
                 href="#"
                 className="ml-6 inline-block text-center font-bold text-xl bg-skin-lightBlue border border-transparent rounded-md py-3 px-8 text-skin-darkBlue hover:bg-skin-hoverBlue relative z-20"
               >
                 Sell
               </a>
+              </Link>
+              <Link href="/donatengo">
               <button
                 href="#"
-                className="block mt-5 px-36 text-center font-bold text-xl border-4 border-[#155D18] rounded-md py-3 text-skin-darkGreen hover:bg-skin-hoverGreen"
+                className="block mt-5 px-[5.4rem] text-center font-bold text-xl border-4 border-[#155D18] rounded-md py-3 text-skin-darkGreen hover:bg-skin-hoverGreen"
               >
-                Sell
+                Donate to NGO
               </button>
+              </Link>
             </div>
           </div>
         </div>

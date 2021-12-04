@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -12,7 +13,9 @@ const Footer = () => {
                 </div>
                 <div className=" m-auto text-center md:text-left my-7">
                     <h2 className="text-xl font-bold mb-2">Know Us</h2>
+                    <Link href="/aboutus">
                     <p className="py-2">About</p>
+                    </Link>
                     <p>Project Details</p>
                 </div>
                 <div className="m-auto text-center md:text-left my-7">

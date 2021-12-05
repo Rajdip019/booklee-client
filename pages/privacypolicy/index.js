@@ -10,7 +10,7 @@ export default function ThankYou() {
             <Navbar />
             <GeneralSidebar title="Privacy Policy" />
             <div className="lg:w-[calc(100%-300px)] ">
-                <div className="lg:ml-[calc(300px+4vw)] text-center w-11/12 mx-auto lg:text-left">
+                <div className="lg:ml-[calc(300px+4vw)] w-11/12 mx-auto ">
                     <h1 className="text-4xl font-semibold mt-16">Privacy Policy for Booklee</h1>
 
                     <p className="my-4">At Booklee, accessible from www.booklee.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Booklee and how we use it.</p>

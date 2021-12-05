@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
 
 
-    <div className="shadow-lg md:sticky top-0 z-20">
+    <div className="shadow-lg md:sticky top-0 z-40">
 
 
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">

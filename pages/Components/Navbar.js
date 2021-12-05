@@ -221,7 +221,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/* //////////////////////////////Mobile Serch Input/////////////////////////////////////////// */}
-      <div className="w-full pb-5 block xl:hidden bg-white mx-auto relative z-20">
+      <div className="w-full pb-5 block xl:hidden bg-white mx-auto">
         <div className="mx-auto flex justify-center">
           <Input
             type="text"

@@ -14,24 +14,31 @@ const DonationNGOlist = () => {
       <GeneralSidebar title="Donate to a NGO" />
       <div className="lg:w-[calc(100%-300px)] mt-10">
         <div className="lg:ml-[calc(300px+4vw)]  w-11/12 mx-auto ">
-          <h1 className="text-2xl font-bold mb-5 w-10/12 mx-auto lg:mx-0 xl:ml-44 lg:w-[calc(100%-300px)] ">
+          <h1 className="text-2xl font-bold mb-5 text-center">
             Find Nearby NGO
           </h1>
-
+          <div>
           <NGOlist />
           <NGOlist />
           <NGOlist />
           <NGOlist />
           <NGOlist />
           <NGOlist />
+          </div>
 
           <div className="mt-5">
-            <div className="w-full text-center">
+            <div className="flex justify-center">
+            <Link href="/donatengo/donationadressform">
+                <button type="submit" className=" font-bold text-lg bg-skin-lightRed text-skin-darkRed p-2 px-4 rounded-xl mb-5 mx-4">
+                  Back
+                </button>
+              </Link>
               <Link href="/donatengo/donationbookform">
-                <button type="submit" className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5">
+                <button type="submit" className=" font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5 mx-4">
                   Continue
                 </button>
               </Link>
+
             </div>
             <div className="w-10/12 mx-auto"> 
               <div className="grid grid-cols-3">

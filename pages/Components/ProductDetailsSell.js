@@ -9,7 +9,7 @@ const ProductDetailsSell = (props) => {
                     <img src={props.img} alt="book-preview" className=" rounded-xl min-h-full min-w-full " />
                 </div>
 
-                <div className="m-auto mt-6 lg:m-auto">
+                <div className="m-auto mt-6 lg:mt-12">
                     <div className="flex mb-8">
                         <h1 className="text-4xl font-semibold">{props.name}</h1>
                         <h3 className="ml-5 my-auto bg-skin-lightBlue text-skin-darkBlue rounded-lg p-2 font-bold">{props.category}</h3>

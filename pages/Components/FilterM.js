@@ -51,8 +51,10 @@ const FilterM = () => {
                     </div>
                 </div>
                 <div  className="mt-10">
-                    <h2 className="text-center text-xl font-semibold py-3">Condition</h2>
-                    <div className="w-full ">
+                    <h2 className="text-xl font-semibold py-3">Condition</h2>
+                    <div className="mx-auto">
+                    <div className="text-left inline">
+                      
 
                     <Checkbox>4 Star & above</Checkbox>
                     <br />
@@ -61,9 +63,10 @@ const FilterM = () => {
                     <Checkbox >All</Checkbox>
     
                     </div>
+                    </div>
                 </div>
                 <div  className="mt-10">
-                <h2 className="text-center text-xl font-semibold py-3">Category</h2>
+                <h2 className="text-xl font-semibold py-3">Category</h2>
                 <Checkbox>Educational</Checkbox>
                     <br />
                     <Checkbox >Story</Checkbox>

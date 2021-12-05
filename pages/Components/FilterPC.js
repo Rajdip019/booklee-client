@@ -1,8 +1,13 @@
 import React from 'react'
+import {
+    ChakraProvider,
+    Checkbox
+  } from '@chakra-ui/react'
 
 const FilterPC = () => {
     return (
         <>
+        <ChakraProvider>
             <div className="w-[300px] text-center shadow-2xl h-[100vh] fixed">
                 <h1 className="text-3xl font-semibold py-10">Filter</h1>
                 <div>
@@ -15,35 +20,23 @@ const FilterPC = () => {
                 <div  className="mt-10">
                     <h2 className="text-left pl-10 text-xl font-semibold py-3">Condition</h2>
                     <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="4" className="w-2 h-2 "/>
-                    <label for="4" className="pl-2">4 Star and above</label>
-                    </div>
-                    <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="3" className="w-2 h-2 "/>
-                    <label for="3" className="pl-2">3 Star and above</label>
-                    </div>
-                    <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="all" className="w-2 h-2 "/>
-                    <label for="all" className="pl-2">All</label>
+                    <Checkbox>4 Star & above</Checkbox>
+                    <br />
+                    <Checkbox >3 Star and above</Checkbox>
+                    <br />
+                    <Checkbox >All</Checkbox>
                     </div>
                 </div>
                 <div  className="mt-10">
                 <h2 className="text-left pl-10 text-xl font-semibold py-3">Category</h2>
                     <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="4" className="w-2 h-2 "/>
-                    <label for="4" className="pl-2">Educational</label>
-                    </div>
-                    <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="3" className="w-2 h-2 "/>
-                    <label for="3" className="pl-2">Story</label>
-                    </div>
-                    <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="all" className="w-2 h-2 "/>
-                    <label for="all" className="pl-2">Sci-fi</label>
-                    </div>
-                    <div className="text-left pl-10 mt-1">
-                    <input type="checkbox" name="all" className="w-2 h-2 "/>
-                    <label for="all" className="pl-2">Documentry</label>
+                    <Checkbox>Educational</Checkbox>
+                    <br />
+                    <Checkbox >Story</Checkbox>
+                    <br />
+                    <Checkbox >Sci-fi</Checkbox>
+                    <br />
+                    <Checkbox >Documentry</Checkbox>
                     </div>
                 </div>
                 <div  className="mt-10">
@@ -56,6 +49,7 @@ const FilterPC = () => {
                    </select>
                 </div>
             </div>
+            </ChakraProvider>
         </>
     )
 }

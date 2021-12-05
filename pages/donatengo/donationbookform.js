@@ -60,18 +60,22 @@ const DonationBookForm = () => {
       {/* /////////<///////////////////////////After Grid////////////////////////////////////////// */}
 
       <div className="mt-5 w-10/12 mx-auto">
-        <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)]">
-          <hr className="my-5"></hr>
+        <div className="ml-[0px] lg:ml-[300px] w-full md:w-11/12 lg:w-[calc(100%-300px)]">
+          <hr className="my-5 hidden md:block"></hr>
           <div className="mb-10">
-          <div className="w-full text-center">
-            <Link href="/thankyoufordonation">
-          <button
-           type="submit" className="mx-auto font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-10"
-          >
-            Confirm Pickup
-          </button>
-          </Link>
-          </div>
+          <div className="flex justify-center">
+
+              <Link href="/donatengo/donationNGOlist">
+                <button type="submit" className=" font-bold text-lg bg-skin-lightRed text-skin-darkRed p-2 px-4 rounded-xl mb-5 mx-4">
+                  Back
+                </button>
+              </Link>
+              <Link href="/thankyoufordonation">
+                <button type="submit" className=" font-bold text-lg bg-skin-lightGreen text-skin-darkGreen p-2 px-2 rounded-xl mb-5 mx-4">
+                Confirm Pickup
+                </button>
+              </Link>
+            </div>
           <div className="">
                 <div className="grid grid-cols-3">
                   <div className="px-5 mx-auto">

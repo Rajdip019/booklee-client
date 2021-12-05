@@ -42,10 +42,10 @@ const ProductCardDonationMakeProof = (props) => {
             <button className="w-[235px] rounded-bl-lg bg-skin-lightGreen text-skin-darkGreen py-3 font-bold text-left pl-4" onClick={() => {onOpen(); handleExpansionClose(); }}>Get Donation Proof</button>
             {/* /////////////////////////////////////////// Dination Proof Modal Config Start/////////////////////////////////////////////////////*/}
 
-            <Modal isOpen={isOpen} onClose={onClose}  isCentered>
+            <Modal isOpen={isOpen} onClose={onClose}  isCentered  zIndex="40" position="relative">
         <ModalOverlay bgColor="rgba(0, 0, 0, 0.2)"/>
         <div>
-        <ModalContent className="bg-white rounded-lg shadow-lg p-8" maxW="400px" m="auto" minH="100px">
+        <ModalContent className="bg-white rounded-lg shadow-lg p-8" maxW="400px" m="auto" minH="100px" pos="relative" zIndex="50" >
           <ModalHeader className="text-center text-2xl font-semibold">Make Donation Proof</ModalHeader>
           <ModalCloseButton className=" right-4 absolute" />
           <ModalBody className="text-center">

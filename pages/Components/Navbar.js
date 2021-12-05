@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
 
 
-    <div className="shadow-lg sticky top-0 z-30">
+    <div className="shadow-lg md:sticky top-0 z-20">
 
 
       <nav className="bg-white flex justify-between max-w-8xl sm:px-6 lg:px-[200px]">
@@ -45,7 +45,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="w-72 flex">
+        <div className="w-[25vw] flex">
           <Input
             type="text"
             placeholder="Search "
@@ -221,12 +221,12 @@ const Navbar = () => {
         </div>
       </nav>
       {/* //////////////////////////////Mobile Serch Input/////////////////////////////////////////// */}
-      <div className="w-full pb-5 block xl:hidden bg-white">
+      <div className="w-full pb-5 block xl:hidden bg-white mx-auto relative z-20">
         <div className="mx-auto flex justify-center">
           <Input
             type="text"
             placeholder="Search"
-            className=" bg-gray-200 h-10 w-[315px] md:w-[450px] rounded-r-none"
+            className=" bg-gray-200 h-10 w-[80vw] rounded-r-none"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"

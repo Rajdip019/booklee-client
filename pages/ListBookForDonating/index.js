@@ -2,21 +2,37 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import Document from "../document";
+import Link from "next/link";
 import {
   Input,
-  InputRightElement,
-  InputGroup,
-  Button,
   ChakraProvider,
 } from "@chakra-ui/react";
 
 const ListBookForDonating = () => {
   return (
-    <form>
     <div>
     <Document />
       <Navbar />
       <GeneralSidebar title="List Your Book" />
+      <div className="ml-[0px] lg:ml-[300px] lg:w-[calc(100%-300px)] ">
+      <div className="hidden lg:block bg-skin-lightGreen text-skin-darkGreen rounded-xl w-11/12 mx-auto mt-5 shadow-lg">
+          <div className="flex flex-col sm:flex-row text-center sm:text-left justify-between h-full ">
+            <div className="ml-0 sm:ml-7 my-auto ">
+              <h1 className="text-xl sm:text-2xl font-bold">
+                Donate to NGO
+              </h1>
+
+            </div>
+            <div className="my-auto text-center">
+            <Link href="/donatengo">
+            <button className="font-bold bg-skin-darkGreen text-skin-lightGreen rounded-xl mr-0 sm:mr-7 p-2 my-3 text-xl">
+              Donate
+            </button>
+            </Link>
+            </div>
+          </div>
+      </div>
+    </div>
 
       {/* ///////////////////////////////////Enter Book Details Below(first part)//////////////////////////////// */}
       <div className="mt-10 w-10/12 mx-auto">
@@ -116,7 +132,7 @@ const ListBookForDonating = () => {
       </div>
       </div>
     </div>
-    </form>
+
   );
 };
 

@@ -9,12 +9,12 @@ import {
 
 const ListBookForSelling = () => {
   return (
-    <form>
     <div>
     <Document />
-      <Navbar />
-      <GeneralSidebar title="List Your Book" />
+    <Navbar />
+    <GeneralSidebar title="List Your Book" />
 
+    <form>
       {/* ///////////////////////////////////Enter Book Details Below(first part)//////////////////////////////// */}
       <div className="mt-10 w-10/12 mx-auto">
         <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)] grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10">
@@ -123,14 +123,14 @@ const ListBookForSelling = () => {
               </label>
               <p className="pl-1">or drag and drop</p>
             </div>
-            <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+            <p className="text-xs text-gray-500">PNG, JPG up to 10MB</p>
           </div>
         </div>
       <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
       </div>
       </div>
-    </div>
     </form>
+    </div>
   );
 };
 

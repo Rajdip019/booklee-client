@@ -12,10 +12,10 @@ import {
 
 const ListBookForDonating = () => {
   return (
-    <form>
     <div>
     <Document />
-      <Navbar />
+    <Navbar />
+    <form>
       <GeneralSidebar title="List Your Book" />
 
       {/* ///////////////////////////////////Enter Book Details Below(first part)//////////////////////////////// */}
@@ -115,8 +115,8 @@ const ListBookForDonating = () => {
       <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
       </div>
       </div>
-    </div>
     </form>
+    </div>
   );
 };
 

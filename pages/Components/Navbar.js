@@ -91,15 +91,15 @@ const Navbar = () => {
           </svg>
 
           {/* --------------------------------User Profile----------------------------------------------------- */}
+          
           <Menu>
             <MenuButton
               py={2}
               transition="all 0.2s"
               _expanded={{ bg: "blue.400" }}
               _focus={{ boxShadow: "outline" }}
-              rightIcon={<ChevronDownIcon />}
             >
-              <div className="w-[35px] hidden xl:block ml-4 ">
+              <div className="w-[45px] hidden xl:block ml-4 ">
                 <Avatar
                   name="Dan Abrahmov"
                   src="https://bit.ly/dan-abramov"

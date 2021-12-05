@@ -71,6 +71,8 @@ const UserProfileDonation = (props) => {
 
               src={props.img}
             >
+              <div className="cursor-pointer">
+              <Link href="/userprofile/edit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-8 bg-skin-lightGreen text-skin-darkGreen mt-20 rounded-2xl"
@@ -78,6 +80,8 @@ const UserProfileDonation = (props) => {
               >
                 <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
               </svg>
+              </Link>
+              </div>
             </Avatar>
             <h3 className="text-white text-xl font-semibold">{props.name}</h3>
             <h4 className="text-white">{props.location}</h4>

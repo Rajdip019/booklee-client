@@ -8,10 +8,16 @@ import {
   ChakraProvider,
 } from "@chakra-ui/react";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
+import Document from "../document";
 
 const Register = () => {
   return (
-    <div className="h-screen">
+    <>
+    <Document/>
+      
+    <h1 className="hidden lg:block" style={{textAlign:"right",paddingRight:"50px",marginTop:"10px"}}>Already have an account?  <span className="text-skin-darkGreen font-medium">Log in</span></h1>
+
+    <div className="h-screen" style={{marginTop:"6vh"}}>
       <div className="my-auto">
         <div className="mx-auto">
           <img src="/Logo.png" className="mx-auto w-[250px]"></img>
@@ -62,6 +68,8 @@ const Register = () => {
               <button className="text-center w-full bg-skin-lightGreen text-skin-darkGreen hover:bg-skin-hoverGreen font-bold p-3 rounded-lg shadow-lg">
                 Register
               </button>
+              <h1 className="block lg:hidden text-center mt-5" >Already have an account?<span className="text-skin-darkGreen font-medium">Log in</span></h1>
+
             </div>
             
           </div>
@@ -70,6 +78,7 @@ const Register = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

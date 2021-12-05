@@ -69,9 +69,9 @@ const DonationAddressForm = () => {
       </div>
       {/* /////////<///////////////////////////After Grid////////////////////////////////////////// */}
 
-      <div className="mt-5 w-10/12 mx-auto">
-        <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)]">
-          <hr className="my-5"></hr>
+      <div className="mt-5 md:w-10/12 mx-auto">
+        <div className="ml-[0px] lg:ml-[300px] w-full md:w-11/12 lg:w-[calc(100%-300px)]">
+          <hr className="hidden md:block my-5"></hr>
           <div className="mb-10">
           <div className="w-full text-center">
             <Link href="/donatengo/donationNGOlist">
@@ -83,7 +83,7 @@ const DonationAddressForm = () => {
           </Link>
           </div>
             <div>
-              <div className="">
+              <div className="mx-auto">
                 <div className="grid grid-cols-3">
                   <div className="px-5 mx-auto">
                   <span className="inline-block bg-skin-lightBlue px-5 rounded-full text-skin-darkBlue font-bold p-3 ">

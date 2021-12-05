@@ -9,7 +9,7 @@ const ProductDetailsDonation = (props) => {
     <img src={props.img} alt="book-preview" className=" rounded-xl min-h-full min-w-full " />
 </div>
 
-<div className="m-auto mt-6 lg:m-auto">
+<div className="m-auto mt-6 lg:mt-12">
     <div className=" mb-8">
         <h1 className="text-4xl font-semibold">{props.name}</h1>
     </div>

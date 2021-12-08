@@ -3,12 +3,39 @@ import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
 import Document from "../document";
 import Link from "next/link";
+import { useToast } from '@chakra-ui/react'
 import {
   Input,
   ChakraProvider,
+  Box,Button
 } from "@chakra-ui/react";
 
+
 const ListBookForDonating = () => {
+
+  function ToastComponent(event) {
+    const toast = useToast();
+
+    return(
+    <Box className="w-[70px] mt-5" onClick={() =>
+      toast({
+        title: 'Book Listed.',
+        description: "We've listed your book for Donation.",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
+    }>
+      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg "
+      onClick={(event) => event.preventDefault()
+      }
+    >
+      Submit
+    </button>
+    </Box>
+    )
+  }
+
   return (
     <div>
     <Document />
@@ -130,7 +157,9 @@ const ListBookForDonating = () => {
             <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
           </div>
         </div>
-      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
+      <ChakraProvider>
+      <ToastComponent />
+      </ChakraProvider>
       </div>
       </div>
 

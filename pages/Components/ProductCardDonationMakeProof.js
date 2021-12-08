@@ -16,6 +16,8 @@ import {
   ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
+import DeleteModalButton from "./DeleteModalButton";
+import DonatedModalButton from "./DonatedModalButton";
 
 const ProductCardDonationMakeProof = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -188,10 +190,10 @@ const ProductCardDonationMakeProof = (props) => {
                 </MenuItem>
               </Link>
               <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
-                <span className="text-skin-darkGreen">Delete</span>
+              <DeleteModalButton/>
               </MenuItem>
               <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
-                <span className="text-skin-darkGreen">Donated</span>
+                <DonatedModalButton/>
               </MenuItem>
             </MenuList>
           </Menu>

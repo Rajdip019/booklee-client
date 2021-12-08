@@ -15,6 +15,8 @@ import {
     ModalCloseButton,
   } from '@chakra-ui/react'
 import Link from 'next/link'
+import SoldModalButton from './SoldModalButton'
+import DeleteModalButton from './DeleteModalButton'
 
 const ProductCardSellMakeInvoice = (props) => {
 
@@ -111,8 +113,8 @@ const ProductCardSellMakeInvoice = (props) => {
                 <Link href="/bookSellEdit">
                 <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><span className="text-skin-darkBlue">Edit</span></MenuItem>
                 </Link>
-                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><span className="text-skin-darkBlue">Delete</span></MenuItem>
-                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><span className="text-skin-darkBlue">Sold</span></MenuItem>
+                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><DeleteModalButton/></MenuItem>
+                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><SoldModalButton/> </MenuItem>
             </MenuList>
             </Menu>
 

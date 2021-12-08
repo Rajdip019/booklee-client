@@ -8,14 +8,14 @@ import {
   ChakraProvider,
 } from "@chakra-ui/react";
 
-const ListBookForDonating = () => {
+const bookDonateEdit = () => {
   return (
     <div>
     <Document />
     <Navbar />
     <form>
 
-      <GeneralSidebar title="List Your Book" />
+      <GeneralSidebar title="Edit Book Details" />
       <div className="ml-[0px] lg:ml-[300px] lg:w-[calc(100%-300px)] ">
       <div className="hidden lg:block bg-skin-lightGreen text-skin-darkGreen rounded-xl w-11/12 mx-auto mt-5 shadow-lg">
           <div className="flex flex-col sm:flex-row text-center sm:text-left justify-between h-full ">
@@ -41,7 +41,7 @@ const ListBookForDonating = () => {
         <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)] grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10">
           <div>
             <h1 className="text-2xl font-bold mb-5">
-              Enter Book Details Below
+              Edit Book Details Below
             </h1>
             <div className="my-3">
               <h3>Book Name</h3>
@@ -73,7 +73,7 @@ const ListBookForDonating = () => {
             <div className="xl:pr-8">
               <div className="hidden md:block">
                 <img
-                  src="/ListBookForDonation.svg"
+                  src="/EditDonate.svg"
                   className="w-[230px] h-[160px]"
                 ></img>
               </div>
@@ -94,7 +94,7 @@ const ListBookForDonating = () => {
       <div className="mt-5 w-10/12 mx-auto">
       <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)]">
                 <label className="block text-sm font-medium text-gray-700">
-        Add Product Image
+        Change Product Image
         </label>
         <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
           <div className="space-y-1 text-center">
@@ -130,7 +130,7 @@ const ListBookForDonating = () => {
             <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
           </div>
         </div>
-      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
+      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Save</button>
       </div>
       </div>
 
@@ -144,4 +144,4 @@ const ListBookForDonating = () => {
   );
 };
 
-export default ListBookForDonating;
+export default bookDonateEdit;

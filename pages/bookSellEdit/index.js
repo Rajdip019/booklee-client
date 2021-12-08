@@ -1,47 +1,27 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import GeneralSidebar from "../Components/GeneralSidebar";
+
 import Document from "../document";
-import Link from "next/link";
 import {
   Input,
   ChakraProvider,
 } from "@chakra-ui/react";
 
-const ListBookForDonating = () => {
+const bookSellEdit = () => {
   return (
     <div>
     <Document />
     <Navbar />
+    <GeneralSidebar title="Edit Book Details" />
+
     <form>
-
-      <GeneralSidebar title="List Your Book" />
-      <div className="ml-[0px] lg:ml-[300px] lg:w-[calc(100%-300px)] ">
-      <div className="hidden lg:block bg-skin-lightGreen text-skin-darkGreen rounded-xl w-11/12 mx-auto mt-5 shadow-lg">
-          <div className="flex flex-col sm:flex-row text-center sm:text-left justify-between h-full ">
-            <div className="ml-0 sm:ml-7 my-auto ">
-              <h1 className="text-xl sm:text-2xl font-bold">
-                Donate to NGO
-              </h1>
-
-            </div>
-            <div className="my-auto text-center">
-            <Link href="/donatengo">
-            <button className="font-bold bg-skin-darkGreen text-skin-lightGreen rounded-xl mr-0 sm:mr-7 p-2 my-3 text-xl">
-              Donate
-            </button>
-            </Link>
-            </div>
-          </div>
-      </div>
-    </div>
-
       {/* ///////////////////////////////////Enter Book Details Below(first part)//////////////////////////////// */}
       <div className="mt-10 w-10/12 mx-auto">
         <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)] grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10">
           <div>
             <h1 className="text-2xl font-bold mb-5">
-              Enter Book Details Below
+              Edit Book Details Below
             </h1>
             <div className="my-3">
               <h3>Book Name</h3>
@@ -66,24 +46,41 @@ const ListBookForDonating = () => {
                   <Input placeholder="Enter Quantity" />
                 </ChakraProvider>
               </div>
+              <div className="mt-5">
+                <div className="mb-5">
+                  <h3> price</h3>
+                  <ChakraProvider>
+                    <Input placeholder="Enter price" />
+                  </ChakraProvider>
+                </div>
+              </div>
             </div>
           </div>
           {/* ///////////////////////////////////Enter Book Details Below(last part)//////////////////////////////// */}
-          <div className="mt-0 md:mt-[59px]">
+          <div className="mt-0 md:mt-[50px]">
             <div className="xl:pr-8">
               <div className="hidden md:block">
                 <img
-                  src="/ListBookForDonation.svg"
+                  src="/EditSell.svg"
                   className="w-[230px] h-[160px]"
                 ></img>
               </div>
 
-              <label for="cars">Condition</label>
+              <label for="cars">Overall Condition</label>
               <select className="block w-full h-[40px] pl-2 mb-5">
                 <option value="Kolkata">4 stars or above</option>
                 <option value="Mumbai">3 stars or above</option>
                 <option value="Delhi">2 stars or above</option>
                 <option value="Chennai">1 stars or above</option>
+              </select>
+              <label for="cars">Category</label>
+              <select className="block w-full h-[40px] pl-2 mb-5">
+                <option value="Education">Education</option>
+                <option value="Story Book">Story Book</option>
+                <option value="Sci-fi">Sci-fi</option>
+                <option value="Self-Growth">Self-Growth</option>
+                <option value="Horror">Horror</option>
+                <option value="Documentry">Documentry</option>
               </select>
             </div>
           </div>
@@ -94,7 +91,7 @@ const ListBookForDonating = () => {
       <div className="mt-5 w-10/12 mx-auto">
       <div className="ml-[0px] lg:ml-[300px] w-11/12 lg:w-[calc(100%-300px)]">
                 <label className="block text-sm font-medium text-gray-700">
-        Add Product Image
+        Change Product Image
         </label>
         <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
           <div className="space-y-1 text-center">
@@ -127,21 +124,15 @@ const ListBookForDonating = () => {
               </label>
               <p className="pl-1">or drag and drop</p>
             </div>
-            <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+            <p className="text-xs text-gray-500">PNG, JPG up to 10MB</p>
           </div>
         </div>
-      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">Publish</button>
+      <button type="submit" className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5">save</button>
       </div>
       </div>
-
     </form>
     </div>
-
-
-
-
-
   );
 };
 
-export default ListBookForDonating;
+export default bookSellEdit;

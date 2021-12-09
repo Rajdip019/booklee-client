@@ -18,9 +18,7 @@ const DeleteModalButton = () => {
   return (
     <div>
       <ChakraProvider>
-      <MenuItem className="p-1 hover:bg-skin-lightRed transition-all rounded font-semibold">
       <span  onClick={onOpen} className="text-skin-darkRed">Delete</span>
-      </MenuItem>
 
 
         <Modal isOpen={isOpen} onClose={onClose}>
@@ -35,13 +33,11 @@ const DeleteModalButton = () => {
             <ModalFooter>
               <button
                 className="bg-skin-lightBlue text-skin-darkBlue font-bold p-2 mx-2 rounded-lg mt-5"
-                mr={3}
                 onClick={onClose}
               >
                 No
               </button>
               <button
-                variant="ghost"
                 type="submit"
                 className="bg-skin-lightRed text-skin-darkRed font-bold p-2 mx-2 rounded-lg mt-5"
               >

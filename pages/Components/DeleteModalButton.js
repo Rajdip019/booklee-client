@@ -1,15 +1,16 @@
 import React from "react";
 import {
+  MenuItem,
   Modal,
   ModalOverlay,
   ModalContent,
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,
+  ModalCloseButton
 } from "@chakra-ui/react";
 
-import { ChakraProvider, Button } from "@chakra-ui/react";
+import { ChakraProvider} from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 
 const DeleteModalButton = () => {
@@ -17,7 +18,9 @@ const DeleteModalButton = () => {
   return (
     <div>
       <ChakraProvider>
+      <MenuItem className="p-1 hover:bg-skin-lightRed transition-all rounded font-semibold">
       <span  onClick={onOpen} className="text-skin-darkRed">Delete</span>
+      </MenuItem>
 
 
         <Modal isOpen={isOpen} onClose={onClose}>
@@ -30,20 +33,20 @@ const DeleteModalButton = () => {
             </ModalBody>
 
             <ModalFooter>
-              <Button
-                className="bg-skin-lightBlue text-skin-darkBlue font-bold p-2 rounded-lg mt-5"
+              <button
+                className="bg-skin-lightBlue text-skin-darkBlue font-bold p-2 mx-2 rounded-lg mt-5"
                 mr={3}
                 onClick={onClose}
               >
                 No
-              </Button>
-              <Button
+              </button>
+              <button
                 variant="ghost"
                 type="submit"
-                className="bg-skin-lightRed text-skin-darkRed font-bold p-2 rounded-lg mt-5"
+                className="bg-skin-lightRed text-skin-darkRed font-bold p-2 mx-2 rounded-lg mt-5"
               >
                 Yes
-              </Button>
+              </button>
             </ModalFooter>
           </ModalContent>
         </Modal>

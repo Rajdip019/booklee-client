@@ -52,7 +52,7 @@ const ProductCardDonationMakeProof = (props) => {
           >
             Get Donation Proof
           </button>
-          {/* /////////////////////////////////////////// Dination Proof Modal Config Start/////////////////////////////////////////////////////*/}
+          {/* /////////////////////////////////////////// Donation Proof Modal Config Start/////////////////////////////////////////////////////*/}
 
           <Modal
             isOpen={isOpen}

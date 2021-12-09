@@ -1,10 +1,6 @@
 import React from "react";
 import {
-  Menu,
-  MenuButton,
-  MenuList,
   MenuItem,
-  ChevronDownIcon,
   Modal,
   ModalOverlay,
   ModalContent,

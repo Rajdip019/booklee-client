@@ -158,7 +158,6 @@ const ProductCardDonationMakeProof = (props) => {
           </Modal>
 
           {/* /////////////////////////////////////////// Dropdown Menu Config Start/////////////////////////////////////////////////////*/}
-
           <Menu>
             <MenuButton
               className="bg-skin-lightGreen text-skin-darkGreen rounded-br-lg border-none"
@@ -183,19 +182,17 @@ const ProductCardDonationMakeProof = (props) => {
                 </svg>
               </div>
             </MenuButton>
+          <div className="relative z-40"> 
             <MenuList className=" bg-white rounded-lg p-2 w-28 shadow-lg">
               <Link href="/bookDonateEdit">
                 <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
                   <span className="text-skin-darkGreen">Edit</span>
                 </MenuItem>
               </Link>
-              <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
               <DeleteModalButton/>
-              </MenuItem>
-              <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
                 <DonatedModalButton/>
-              </MenuItem>
             </MenuList>
+          </div>
           </Menu>
 
           {/* /////////////////////////////////////////// Dropdown Menu Config End/////////////////////////////////////////////////////*/}

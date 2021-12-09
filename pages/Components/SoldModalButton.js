@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  MenuItem,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -9,15 +10,17 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 
-import { ChakraProvider, Button } from "@chakra-ui/react";
+import { ChakraProvider} from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 
-const SoldModalButton = () => {
+const SoldModalbutton = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
       <ChakraProvider>
+      <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
       <span  onClick={onOpen} className="text-skin-darkBlue">Sold</span>
+      </MenuItem>
 
 
         <Modal isOpen={isOpen} onClose={onClose}>
@@ -30,20 +33,19 @@ const SoldModalButton = () => {
             </ModalBody>
 
             <ModalFooter>
-              <Button
-                className="bg-skin-lightBlue text-skin-darkBlue font-bold p-2 rounded-lg mt-5"
+              <button
+                className="bg-skin-lightBlue text-skin-darkBlue font-bold p-2 mx-2 rounded-lg mt-5"
                 mr={3}
                 onClick={onClose}
               >
                 No
-              </Button>
-              <Button
-                variant="ghost"
+              </button>
+              <button
                 type="submit"
-                className="bg-skin-lightGreen text-skin-darkGreen font-bold p-2 rounded-lg mt-5"
+                className="bg-skin-lightGreen text-skin-darkGreen font-bold mx-4 p-2 rounded-lg mt-5"
               >
                 Yes
-              </Button>
+              </button>
             </ModalFooter>
           </ModalContent>
         </Modal>
@@ -52,4 +54,4 @@ const SoldModalButton = () => {
   );
 };
 
-export default SoldModalButton;
+export default SoldModalbutton;

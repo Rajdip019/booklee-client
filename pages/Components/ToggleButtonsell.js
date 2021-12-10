@@ -1,5 +1,5 @@
 import React from "react";
-import { Tabs, TabList, TabPanels, Tab, TabPanel, ChakraProvider } from "@chakra-ui/react";
+import { Tabs, TabList, Tab, ChakraProvider } from "@chakra-ui/react";
 import Link from "next/link";
 
 

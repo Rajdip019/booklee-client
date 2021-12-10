@@ -189,7 +189,7 @@ const ProductCardDonationMakeProof = (props) => {
                   <span className="text-skin-darkGreen">Edit</span>
                 </MenuItem>
               </Link>
-              <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">
+              <MenuItem className="p-1 hover:bg-skin-lightRed transition-all rounded font-semibold">
               <DeleteModalButton/>
               </MenuItem>
               <MenuItem className="p-1 hover:bg-skin-lightGreen transition-all rounded font-semibold">

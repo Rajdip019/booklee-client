@@ -17,7 +17,7 @@ const DeleteModalButton = () => {
   return (
     <div>
       <ChakraProvider>
-      <span  onClick={onOpen} className="text-skin-darkRed">Delete</span>
+      <button   onClick={onOpen} className=" w-[100px] text-left font-semibold text-skin-darkRed">Delete</button>
 
 
         <Modal isOpen={isOpen} onClose={onClose}>
@@ -40,7 +40,7 @@ const DeleteModalButton = () => {
               <Button
                 variant="ghost"
                 type="submit"
-                className="bg-skin-lightRed text-skin-darkRed font-bold p-2 rounded-lg mt-5"
+                className="bg-skin-lightRed font-bold p-2 rounded-lg mt-5"
               >
                 Yes
               </Button>

@@ -18,7 +18,7 @@ const bookDonateEdit = () => {
       <GeneralSidebar title="Edit Book Details" />
       <div className="ml-[0px] lg:ml-[300px] lg:w-[calc(100%-300px)] ">
       <div className="hidden lg:block bg-skin-lightGreen text-skin-darkGreen rounded-xl w-11/12 mx-auto mt-5 shadow-lg">
-          <div className="flex flex-col sm:flex-row text-center sm:text-left justify-between h-full ">
+          <div className="flex flex-col sm:flex-row text-center sm:text-left justify-between h-full">
             <div className="ml-0 sm:ml-7 my-auto ">
               <h1 className="text-xl sm:text-2xl font-bold">
                 Donate to NGO

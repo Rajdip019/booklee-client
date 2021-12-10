@@ -13,7 +13,7 @@ const DonationNGOlist = () => {
       <form>
         <GeneralSidebar title="Donate to a NGO" />
         <div className="lg:w-[calc(100%-300px)] mt-10">
-          <div className="lg:ml-[calc(300px+4vw)]  w-11/12 mx-auto ">
+          <div className="lg:ml-[calc(300px+4vw)] w-11/12 mx-auto ">
             <h1 className="text-2xl font-bold mb-5 text-center">
               Find Nearby NGO
             </h1>
@@ -25,8 +25,9 @@ const DonationNGOlist = () => {
               <NGOlist />
               <NGOlist />
             </div>
+            </div>
 
-            <div className="mt-5 sticky bottom-0 bg-white py-8 shadow-inner ">
+            <div className="mt-5 sticky bottom-0 bg-white py-8 shadow-inner lg:ml-[300px] w-full">
               <div className="flex justify-center">
                 <Link href="/donatengo/donationadressform">
                   <button type="submit" className=" font-bold text-lg bg-skin-lightRed text-skin-darkRed p-2 px-4 rounded-xl mb-5 mx-4">
@@ -67,7 +68,6 @@ const DonationNGOlist = () => {
                     </span>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

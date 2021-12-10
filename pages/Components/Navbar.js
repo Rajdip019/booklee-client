@@ -122,7 +122,7 @@ const Navbar = () => {
                 <span className="text-skin-darkBlue">Message</span>
               </MenuItem>
               <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold">
-                <span className="text-skin-darkBlue">Log-out</span>
+                <span className="text-skin-darkBlue">Logout</span>
               </MenuItem>
             </MenuList>
           </Menu>

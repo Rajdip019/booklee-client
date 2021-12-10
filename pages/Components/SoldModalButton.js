@@ -17,7 +17,7 @@ const SoldModalButton = () => {
   return (
     <div>
       <ChakraProvider>
-      <button  onClick={onOpen} className=" w-[100px] text-left font-semibold text-skin-darkBlue">Sold</button>
+      <span  onClick={onOpen} className="text-skin-darkBlue">Sold</span>
 
 
         <Modal isOpen={isOpen} onClose={onClose}>

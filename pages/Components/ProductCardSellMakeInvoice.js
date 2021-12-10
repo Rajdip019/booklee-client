@@ -113,7 +113,7 @@ const ProductCardSellMakeInvoice = (props) => {
                 <Link href="/bookSellEdit">
                 <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><span className="text-skin-darkBlue">Edit</span></MenuItem>
                 </Link>
-                <MenuItem className="p-1 hover:bg-skin-lightRed transition-all rounded font-semibold"><DeleteModalButton/></MenuItem>
+                <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><DeleteModalButton/></MenuItem>
                 <MenuItem className="p-1 hover:bg-skin-lightBlue transition-all rounded font-semibold"><SoldModalButton/> </MenuItem>
             </MenuList>
             </Menu>
